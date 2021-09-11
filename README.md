@@ -12,6 +12,7 @@ Durante as aulas foram desenvolvidos e abordados os seguintes tópicos:
 * Criação de config-server para conectar as aplicações
 * Adição da dependência config-client para a conexão das aplicações
 * Implementação do catálogo de serviços (service-discovery) Eureka
+* Implementação do gateway
 
 
 Para executar o backend no terminal, digite o comando:
@@ -20,12 +21,17 @@ Para executar o backend no terminal, digite o comando:
 gradlew run
 ```
 
+Catálogo de serviços ficarão na porta 9000
+```uri
+http://localhost:9000
+```
+
 Acesso ao backend pelo navegador:
 
 ```uri
-http://localhost:8088
+http://localhost:8888
 ```
-
+ 
 
 Com isso, o projeto pode ser acessado pelo endereço:
 
