@@ -20,34 +20,28 @@ Para executar o backend no terminal, digite o comando:
 ```shell script
 gradlew run
 ```
+Sequência de inicialização:
+1. Config-server
+2. Service-discovery
+3. Gateway
+4. Product-catalog e Shopping-cart não tem preferência
 
-Catálogo de serviços ficarão na porta 9000
+
+O catálogo de serviços ficará na porta 9000
 ```uri
 http://localhost:9000
 ```
+O Gateway fará o balanceamento dos serviços registrads no catálogo para que a aplicação REST possa funcionar.
 
-Acesso ao backend pelo navegador:
-
-```uri
-http://localhost:8888
-```
- 
-
-Com isso, o projeto pode ser acessado pelo endereço:
-
-```uri
-http://localhost:4200/
-```
-
-O que eu utilizei para acompanhar este projeto:
+O que eu utilizei para acompanhar este projeto foi:
 
 * CRUD REST API:
   * Spring Boot 2.2.6
   * Java 8
   * Gradle 7.2
+  * Redis
+  * ElasticSearch
 * Outros Apps de suporte:
   * VSCode 1.60.0
-  * NodeJs 12.22.5
-  * Npm 6.14.14
   * Controle de versão GIT
   * Conta GITHUB para armazenamento do projeto
