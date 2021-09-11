@@ -10,6 +10,8 @@ Durante as aulas foram desenvolvidos e abordados os seguintes tópicos:
 * Implementação do elasticSearch via docker
 * Implementação do banco de dados Redis via Docker
 * Criação de config-server para conectar as aplicações
+* Adição da dependência config-client para a conexão das aplicações
+* Implementação do catálogo de serviços (service-discovery) Eureka
 
 
 Para executar o backend no terminal, digite o comando:
@@ -18,19 +20,12 @@ Para executar o backend no terminal, digite o comando:
 gradlew run
 ```
 
-
-
 Acesso ao backend pelo navegador:
 
 ```uri
-http://localhost:8082/api/v1/rooms
+http://localhost:8088
 ```
 
-Execução do frontend no terminal, digite o comando:
-
-```shel script
-ng serve
-```
 
 Com isso, o projeto pode ser acessado pelo endereço:
 
@@ -43,6 +38,7 @@ O que eu utilizei para acompanhar este projeto:
 * CRUD REST API:
   * Spring Boot 2.2.6
   * Java 8
+  * Gradle 7.2
 * Outros Apps de suporte:
   * VSCode 1.60.0
   * NodeJs 12.22.5
